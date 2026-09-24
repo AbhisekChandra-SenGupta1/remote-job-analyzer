@@ -28,6 +28,17 @@ df = get_data()
 st.title("🌍 Remote Job Market Intelligence Dashboard")
 st.caption("Live snapshot of remote job postings scraped from We Work Remotely")
 
+last_scraped = df["scraped_at"].max()
+st.caption(f"📅 Data last scraped: {last_scraped:%B %d, %Y %H:%M}")
+
+with st.expander("ℹ️ About this data"):
+    st.markdown("""
+    - **Source:** [We Work Remotely](https://weworkremotely.com), scraped across 9 job categories.
+    - **Snapshot, not live:** This reflects one scrape at the timestamp above, not a continuously updating feed.
+    - **Skill tags:** Only 20% of listings (57 of 285) include structured skill data — see the caveat under the skills chart.
+    - **Trend limitation:** A "postings over time" view would need repeated scrapes across multiple days; this single-snapshot dataset can't show that yet.
+    """)
+
 # --- Filters now come FIRST: everything below reads `filtered`, not `df` ---
 st.sidebar.header("Filters")
 
@@ -110,4 +121,11 @@ st.dataframe(
     column_config={"url": st.column_config.LinkColumn("Apply", display_text="Open ↗")},
     hide_index=True,
     use_container_width=True,
+)
+
+st.download_button(
+    "⬇️ Download filtered results as CSV",
+    display_df.to_csv(index=False),
+    file_name="remote_jobs_filtered.csv",
+    mime="text/csv",
 )
