@@ -4,8 +4,10 @@ __pycache__/
 .ipynb_checkpoints/
 data/raw/*
 !data/raw/.gitkeep
+
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/wwr_jobs_clean.csv
 .env
 .DS_Store
 Thumbs.db
