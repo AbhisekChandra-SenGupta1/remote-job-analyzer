@@ -5,7 +5,6 @@ if str(DASHBOARD_DIR) not in sys.path:
     sys.path.append(str(DASHBOARD_DIR))
 
 import streamlit as st
-import pandas as pd
 from common import get_data
 from analysis.metrics import skills_coverage
 
