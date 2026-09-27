@@ -4,8 +4,9 @@ An end-to-end Python data analytics project that scrapes real remote job posting
 
 Originally started as the Web Scraping task for the CodeAlpha Data Analytics Internship, then substantially extended into a complete scrape-to-dashboard analytics platform.
 
-🔗 **Live Demo:** _Coming soon — link will be added here after deployment to Streamlit Community Cloud._
+## 🚀 Live Demo
 
+[Open the Remote Job Market Intelligence Dashboard](https://remote-job-analyzer.streamlit.app)
 ---
 
 ## Overview
