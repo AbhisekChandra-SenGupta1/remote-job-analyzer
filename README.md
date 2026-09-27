@@ -9,6 +9,25 @@ Originally started as the Web Scraping task for the CodeAlpha Data Analytics Int
 [Open the Remote Job Market Intelligence Dashboard](https://remote-job-analyzer.streamlit.app)
 ---
 
+## 📸 Dashboard Preview
+
+### 📊 Market Overview
+![Market Overview - Top](screenshots/market-overview-top.png)
+
+![Market Overview - Analytics](screenshots/market-overview-analytics.png)
+
+### 🔍 Job Explorer
+![Job Explorer](screenshots/job-explorer.png)
+
+### 🎯 Candidate Match
+![Candidate Match](screenshots/candidate-match.png)
+
+### 📈 Market Insights
+![Market Insights](screenshots/market-insights.png)
+
+### 📋 Methodology
+![Methodology](screenshots/methodology.png)
+
 ## Overview
 
 This project scrapes remote job listings from [We Work Remotely](https://weworkremotely.com) across 9 job categories, enriches each listing with structured detail-page data (skills, region, job type, deadlines), cleans and normalizes the dataset, validates which listings are still live, and surfaces all of it through a 5-page Streamlit dashboard.
@@ -162,27 +181,6 @@ streamlit run "dashboard/📊_Market_Overview.py"
 ```
 
 The dashboard opens at `http://localhost:8501`.
-
----
-
-## Screenshots
-
-_Screenshots to be added._
-
-### Market Overview
-*(placeholder)*
-
-### Job Explorer
-*(placeholder)*
-
-### Candidate Match
-*(placeholder)*
-
-### Market Insights
-*(placeholder)*
-
-### Methodology
-*(placeholder)*
 
 ---
 
